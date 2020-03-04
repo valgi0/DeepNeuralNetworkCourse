@@ -1,0 +1,86 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%						LATEX Template
+%
+%	 Author: Valgi0
+%
+%  Goal: Tamplete to create documentations 
+% 
+%%%%%%%%%%%%%
+
+\documentclass[12pt,a4paper,twoside,openright]{scrbook}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+
+
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage{caption}
+\usepackage[usenames]{color}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{fancyvrb}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{indentfirst}
+\usepackage{listings}
+\usepackage{marvosym}
+\usepackage{multicol}
+\usepackage{sectsty}
+\usepackage{subcaption}
+\usepackage{tocloft}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{adjustbox}
+\usepackage{blindtext}
+
+
+\hypersetup{%
+	pdfpagemode={UseOutlines},
+	bookmarksopen,
+	pdfstartview={FitH},
+	colorlinks,
+	linkcolor={black},
+	citecolor={black},
+	urlcolor={black}
+}
+
+
+\makeindex
+
+\subject{Stupid book...}
+\title{Title goes here}
+\subtitle{Sub title goes here}
+\author{Author goes here}
+
+\begin{document}
+
+\frontmatter 
+
+\maketitle
+
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\listoffigures
+
+\mainmatter
+
+\pagestyle{fancy} 
+\fancyhead[LO]{\nouppercase{\rightmark}}
+\fancyhead[RE]{\nouppercase{\leftmark}}
+\fancyhead[LE,RO]{\thepage}
+\fancyfoot{}
+
+%% CAPITOLO 1
+\chapter{Chapter goes here}
+
+\end{document}
