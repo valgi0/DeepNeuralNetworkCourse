@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.3)  3 MAR 2020 18:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.3)  21 MAR 2020 14:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -767,7 +767,11 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 50.
 
 
 Writing index file MyDeepNeuralNetworkNotes.idx
-(./MyDeepNeuralNetworkNotes.aux)
+(./MyDeepNeuralNetworkNotes.aux
+
+LaTeX Warning: Label `img:perceptron_network' multiply defined.
+
+)
 \openout1 = `MyDeepNeuralNetworkNotes.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
@@ -789,8 +793,7 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-
-(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count169
 \scratchdimen=\dimen169
@@ -969,219 +972,134 @@ Class scrbook Warning: usage of \IfUsePrefixLine outside section command
 (scrbook)              setting \IfUsePrefixLine to either \@firstoftwo or
 (scrbook)              \@secondoftwo before using it on input line 107.
 
-<img/log-sigmoid-function.png, id=42, 176.3388pt x 156.1032pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--137
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
+
+ []
+
+[3] [4] [5] [6]
+chapter 3.
+
+Class scrbook Warning: usage of \IfUsePrefixLine outside section command
+(scrbook)              style makes no sense, because the behaviour not only
+(scrbook)              depends on class options but also on the run-time
+(scrbook)              section command style.
+(scrbook)              Neither the then-code nor the else-code will be
+(scrbook)              executed.
+(scrbook)              You may change this and avoid the warning by LOCALLY
+(scrbook)              setting \IfUsePrefixLine to either \@firstoftwo or
+(scrbook)              \@secondoftwo before using it on input line 238.
+
+<img/log-sigmoid-function.png, id=138, 176.3388pt x 156.1032pt>
 File: img/log-sigmoid-function.png Graphic file (type png)
 <use img/log-sigmoid-function.png>
-Package pdftex.def Info: img/log-sigmoid-function.png  used on input line 129.
+Package pdftex.def Info: img/log-sigmoid-function.png  used on input line 260.
 (pdftex.def)             Requested size: 114.61885pt x 101.46587pt.
-[3 <./img/log-sigmoid-function.png (PNG copy)>]
-<img/activation-functions-table.png, id=58, 450.0012pt x 579.1236pt>
+[7
+
+
+ <./img/log-sigmoid-function.png (PNG copy)>]
+<img/activation-functions-table.png, id=146, 450.0012pt x 579.1236pt>
 File: img/activation-functions-table.png Graphic file (type png)
 <use img/activation-functions-table.png>
 Package pdftex.def Info: img/activation-functions-table.png  used on input line
- 141.
+ 272.
 (pdftex.def)             Requested size: 292.4973pt x 376.42587pt.
- [4 <./img/activation-functions-table.png (PNG copy)>] [5]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.230 \textbf{a_t}
-                   = ActivationFunc(\textbf{b} + \textbf{W}*\textbf{a'_{l,t-...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+ [8 <./img/activation-functions-table.png (PNG copy)>] [9] [10] [11] [12]
+chapter 4.
 
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.230 \textbf{a_t}
-                   = ActivationFunc(\textbf{b} + \textbf{W}*\textbf{a'_{l,t-...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+Class scrbook Warning: usage of \IfUsePrefixLine outside section command
+(scrbook)              style makes no sense, because the behaviour not only
+(scrbook)              depends on class options but also on the run-time
+(scrbook)              section command style.
+(scrbook)              Neither the then-code nor the else-code will be
+(scrbook)              executed.
+(scrbook)              You may change this and avoid the warning by LOCALLY
+(scrbook)              setting \IfUsePrefixLine to either \@firstoftwo or
+(scrbook)              \@secondoftwo before using it on input line 430.
 
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.230 \textbf{a_t}
-                   = ActivationFunc(\textbf{b} + \textbf{W}*\textbf{a'_{l,t-...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+(./chapter_learning_rules_for_perceptron_network.tex
+<img/PerceptronNetwork.png, id=189, 569.4876pt x 304.4976pt>
+File: img/PerceptronNetwork.png Graphic file (type png)
+<use img/PerceptronNetwork.png>
+Package pdftex.def Info: img/PerceptronNetwork.png  used on input line 16.
+(pdftex.def)             Requested size: 370.16255pt x 197.9211pt.
 
-! Extra }, or forgotten $.
-\text@ ...e {\textdef@ \displaystyle \f@size {#1}}
-                                                  {\textdef@ \textstyle \f@s...
-l.230 \textbf{a_t}
-                   = ActivationFunc(\textbf{b} + \textbf{W}*\textbf{a'_{l,t-...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.230 \textbf{a_t}
-                   = ActivationFunc(\textbf{b} + \textbf{W}*\textbf{a'_{l,t-...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+Class scrbook Warning: incompatible usage of \@ssect detected.
+(scrbook)              You've used the KOMA-Script implementation of \@ssect
+(scrbook)              from within a non compatible caller, that does not
+(scrbook)              \scr@s@ct@@nn@m@ locally.
+(scrbook)              This could result in several error messages on input lin
+e 32.
 
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.230 \textbf{a_t}
-                   = ActivationFunc(\textbf{b} + \textbf{W}*\textbf{a'_{l,t-...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+[13
 
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.230 \textbf{a_t}
-                   = ActivationFunc(\textbf{b} + \textbf{W}*\textbf{a'_{l,t-...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
 
-! Extra }, or forgotten $.
-\text@ ...xtstyle \f@size {\firstchoice@false #1}}
-                                                  {\textdef@ \textstyle \sf@...
-l.230 \textbf{a_t}
-                   = ActivationFunc(\textbf{b} + \textbf{W}*\textbf{a'_{l,t-...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+]
+<img/decision_boundary_for_perceptron.png, id=195, 279.444pt x 206.2104pt>
+File: img/decision_boundary_for_perceptron.png Graphic file (type png)
+<use img/decision_boundary_for_perceptron.png>
+Package pdftex.def Info: img/decision_boundary_for_perceptron.png  used on inpu
+t line 48.
+(pdftex.def)             Requested size: 139.72165pt x 103.10493pt.
+ [14 <./img/PerceptronNetwork.png (PNG copy)> <./img/decision_boundary_for_perc
+eptron.png (PNG copy)>] [15])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 436.
+ [16]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 436.
+ (./MyDeepNeuralNetworkNotes.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 436.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 436.
+Package rerunfilecheck Info: File `MyDeepNeuralNetworkNotes.out' has not change
+d.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.230 \textbf{a_t}
-                   = ActivationFunc(\textbf{b} + \textbf{W}*\textbf{a'_{l,t-...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.230 \textbf{a_t}
-                   = ActivationFunc(\textbf{b} + \textbf{W}*\textbf{a'_{l,t-...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+LaTeX Warning: There were multiply-defined labels.
 
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.230 \textbf{a_t}
-                   = ActivationFunc(\textbf{b} + \textbf{W}*\textbf{a'_{l,t-...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\text@ ...tstyle \sf@size {\firstchoice@false #1}}
-                                                  {\textdef@ \textstyle \ssf...
-l.230 \textbf{a_t}
-                   = ActivationFunc(\textbf{b} + \textbf{W}*\textbf{a'_{l,t-...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.230 \textbf{a_t}
-                   = ActivationFunc(\textbf{b} + \textbf{W}*\textbf{a'_{l,t-...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.230 \textbf{a_t}
-                   = ActivationFunc(\textbf{b} + \textbf{W}*\textbf{a'_{l,t-...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.230 \textbf{a_t}
-                   = ActivationFunc(\textbf{b} + \textbf{W}*\textbf{a'_{l,t-...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\text@ ...style \ssf@size {\firstchoice@false #1}}
-                                                  \check@mathfonts }
-l.230 \textbf{a_t}
-                   = ActivationFunc(\textbf{b} + \textbf{W}*\textbf{a'_{l,t-...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\text@ ...firstchoice@false #1}}\check@mathfonts }
-                                                  
-l.230 \textbf{a_t}
-                   = ActivationFunc(\textbf{b} + \textbf{W}*\textbf{a'_{l,t-...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-)
-Runaway argument?
-{a'_{l,t-1} + \textbf {U}*\textbf {i_t} \end {equation} $a'_{l,t-1}$ \ETC.
-! File ended while scanning use of \textbf .
-<inserted text> 
-                \par 
-<*> MyDeepNeuralNetworkNotes.tex
-                                
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-! Emergency stop.
-<*> MyDeepNeuralNetworkNotes.tex
-                                
-*** (job aborted, no legal \end found)
-
- 
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 436.
+ ) 
 Here is how much of TeX's memory you used:
- 16400 strings out of 492623
- 258754 string characters out of 6135670
+ 16534 strings out of 492623
+ 260587 string characters out of 6135670
  536029 words of memory out of 5000000
- 19947 multiletter control sequences out of 15000+600000
- 28703 words of font info for 97 fonts, out of 8000000 for 9000
+ 19964 multiletter control sequences out of 15000+600000
+ 28876 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,16n,77p,9103b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 42i,12n,77p,9103b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/t
+exmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts
+/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/c
+m-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm172
+8.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/sha
+re/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf-dist/f
+onts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/cm-super/sfsx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sft
+i1200.pfb>
+Output written on MyDeepNeuralNetworkNotes.pdf (20 pages, 395065 bytes).
+PDF statistics:
+ 408 PDF objects out of 1000 (max. 8388607)
+ 358 compressed objects within 4 object streams
+ 98 named destinations out of 1000 (max. 500000)
+ 23309 words of extra memory for PDF output out of 24883 (max. 10000000)
+

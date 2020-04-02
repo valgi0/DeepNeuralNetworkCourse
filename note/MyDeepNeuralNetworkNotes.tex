@@ -101,9 +101,141 @@ Each chapter contains arguments to one topic and information are organized follo
 \item \textit{a,b,c} are scalars
 \item \textbf{a,b,c} are vectors
 \item \textbf{A,B,C} are matrices
+\item \textbf{0} it is a zero vector
 \end{itemize}
 
+\chapter{Has someone said Math?}
 
+In this chapter we are going to explore all math stuff we need to fully understand the concepts.
+If God Exists he must be a mathematician.
+
+\section{Linear Algebra OMG}
+
+Let's start by defining what is a vector.. a vector is a vector. $\textbf{v} = [i_0, i_1, i_2, ... , i_n]$. In this case $v$ is a vector composed by elements $i \in \mathbb{I}$ with size $n$. So vector comes from $\mathbb{R}^n$ space. This is the n-dimensional Euclidean Space. A vector with all zeros is called \textbf{zero vector} and it will be represented as $\textbf{0}$
+
+\subsection{Vector Space}
+The Vector Space $\mathbb{X}$ is a set of vectors that satisfies the following conditions:
+\begin{itemize}
+\item \textbf{Addition Closure}. This means that:
+\begin{itemize}
+ \item if $\textbf{x}, \textbf{y} \in \mathbb{X}$ so $\textbf{x} + \textbf{y} = \textbf{j}$ and $\textbf{j} \in \mathbb{X}$ for each $\textbf{x,y}$
+ \item  $\textbf{x} + \textbf{y} = \textbf{y} + \textbf{x}$
+ \item  $\textbf{x} + (\textbf{y} + \textbf{c}) = (\textbf{x} + \textbf{y}) + \textbf{c}$
+ \item $\textbf{x} + \textbf{0} = \textbf{x}$
+ \item For each $x \in \mathbb{X}$ exists a unique vector called $\textbf{-x}$ such that $\textbf{x} + (\textbf{-x}) = \textbf{0}$
+ \end{itemize} 
+\item \textbf{Multiplication Closure}. This means that if $\textbf{x} \in \mathbb{X}$ and $y$ a scalar so $\textbf{x} * y = \textbf{j}$ and $\textbf{j} \in \mathbb{X}$ for each $\textbf{x,y}$ \begin{itemize}
+\item $\textbf{x} * 1 = \textbf{x}$
+\item For any $a, b$ scalars $(ab)*\textbf{x} = a(b*\textbf{x})$
+\item $(a + b)*\textbf{x} = a*\textbf{x} + b*\textbf{x}$
+\item $a(\textbf{x} + \textbf{y}) = a*\textbf{x} + a*\textbf{y}$
+\end{itemize}
+\end{itemize}
+
+From the above conditions we can extract some considerations. The first is that each $\mathbb{R}^n$ is a vector space. A subset of this euclidean space can be a vector space only if it his unbounded. For example:
+\newline
+\[ \mathbb{X} = ( (x,y) : x < 5  y < 5, (x,y) \in \mathbb{R}^2)\] \newline \[
+v_0 = (4,4), v_1 = (3,3) \in \mathbb{X}\] \newline \[
+v_0 + v_1 = v_2 = (7,7) not \in \mathbb{X}
+\]
+So $\mathbb{X}$ is not a vector space.
+
+\subsection{Linear Independence}
+\textbf{Linear combination} is a very cool stuff. Let's have a vector $\textbf{x}$ and some different vectors $\textbf{y,z,k}$. If there exists a set of three scalars such that $a_0*\textbf{y} + a_1*\textbf{z} + a_2*\textbf{k} = \textbf{x}$ so $a_0*\textbf{y} + a_1*\textbf{z} + a_2*\textbf{k}$ is a linear combination.
+Linear indipendence is a propery between more vectors. $\textbf{x}_0, \textbf{x}_1,...,  \textbf{x}_n$ are linearly dependent  just if there exist $n$ scalars at least one of which is not zero, that:
+\[a_0\textbf{x}_0 + a_1\textbf{x}_1 +  ... + a_n\textbf{x}_n = \textbf{0} \]
+Otherwise, if all $a_i$ are 0, vectors are \textit{linearly independent}.
+\textbf{Attention} if a set of vectors is linearly dependent so one or more that tis vectors can be obtained by a linear combination of others.
+\newline
+\textbf{Let's do some examples}
+\[\textbf{v}_0 = [1,-1], \textbf{v}_1=[-1,1] , \textbf{v}_2 = [-1,-1]\]
+These are three vectors. Are they linearly independent?
+\[a_0*\textbf{v}_0  +  a_1*\textbf{v}_1 + \textbf{v}_2*a_2  = 0 \rightarrow \begin{bmatrix}
+ a_0 - a_1 - a_2 = 0 \\ -a_0 + a_1 - a_2 = 0
+\end{bmatrix} \]
+Now we need to solve those equations:
+\[a_0 = a_1, a_2 = 0\]
+So they are a linear dependent vectors. This means that we can select one of them and express it as a linear combination of the others:
+\[\textbf{v}_0 = \textbf{v}_1*a_1 + \textbf{v}_2*a_2\]
+That is true for $a_1 = -1$ and $a_2 = 0$.
+
+\subsection{Spanning a Vectors space}
+To create a vector space we can grab some vectors and create this space as the set of all linear combinations of these vectors. It the given vectors are linearly independent they are called \textbf{Basis set} for that vector space. The number of vectors in the basis set is the dimension of the vector space. This means that we can express each vector inside that space using a number of independent vectors equal to the dimension of the space.\newline
+\textbf{For Example} $\mathbb{R}^2$ can have as basis $(1,0), (0,1)$. Using these two vectors we can create each vector inside the space. Try to believe.
+
+A vector space can have infinite basis. But the basis composed by binary vectors
+
+\subsection{Some functions}
+Some functions can be defined between vectors. the first is the \textbf{Inner Product} that is the product between two vector and it is represented with $(\textbf{x}, \textbf{y})$. This function must follow these properties:
+\begin{itemize}
+\item $(\textbf{x}, \textbf{y}) = (\textbf{y}, \textbf{x})$ 
+\item $\textbf{x} (a \textbf{y} + b \textbf{j}) = a(\textbf{x}, \textbf{y}) + b(\textbf{x}, \textbf{j})$
+\item $(\textbf{x}, \textbf{y}) \geq 0$ if $\textbf{x}$ is not the zero vector.
+\end{itemize}
+The standard inner product adopted the respect the above properties is:
+\begin{equation}
+\textbf{x}\textbf{y} = x_{0}y_{0} + x_{1}y_{1} + ... + x_{n}y_{n}
+\end{equation}
+
+Another function that can be defined is the \textbf{Norm} represented by $\parallel \textbf{x} \parallel$. This function must respect these properties:
+\begin{itemize}
+\item $\parallel \textbf{x} \parallel \geq 0$
+\item $\parallel \textbf{x} \parallel = 0$ if $\textbf{x}$ is the zero vector
+\item $\parallel a\textbf{x} \parallel = \mid a \mid \parallel \textbf{x} \parallel$
+\item $\parallel \textbf{x} + \textbf{y} \parallel \leq \parallel \textbf{x} \parallel + \parallel \textbf{y} \parallel$
+\end{itemize}
+There are many function that satisfy these conditions. The most common \textbf{norm} is:
+\begin{equation}
+\parallel \textbf{x} \parallel = (\textbf{x}\textbf{x})^{\frac{1}{2}} = \sqrt{x_0^2 + x_1^2 + ... + x_n^2}
+\end{equation}
+
+Using both of the previous function we can define the \textit{angle} between two vectors. In particular we can calculate the \textit{cosine}:
+\begin{equation}
+cosine(\textbf{x},\textbf{y}) = \frac{ \textbf{x}\textbf{y}}{\parallel \textbf{x} \parallel \parallel \textbf{y} \parallel}
+\end{equation}
+ 
+ \section{Linear Transformation}
+ For \textbf{Transformation} we identify the operation that relate a value x to a value y. Let's define:
+ \begin{itemize}
+ \item \textit{Domain} the set of $x_i \in \mathbb{X}$ values.
+ \item \textit{Range} or Co-domain the set of $y_i \in \mathbb{Y}$ values
+ \item \textit{Transformation} as the rule relating each $x_i$ to an $y_i$ 
+ \end{itemize}
+ 
+ A transformation $A$ is \textit{Linear} if:
+ \begin{itemize}
+ \item for all $x_0, x_1$ $A(x_0 + x_1) = A(x_0) + A(x_1)$
+ \item for all $x_0$ and for all $a$ scalars $A(x_0*a) = A(x_0) * a$   
+ \end{itemize}
+ 
+ \textbf{IMPORTANT}\\
+ \emph{For any transformation between two finite dimensions vector space can be represented by a Matrix. This Matrix is build using the basis of the vector spaces so changing them the matrix change}
+ 
+ \subsection{Eigenvalues eigenvectors}
+ All vectors from a Vector space not $0$ and scalars that make this equation true:
+ \begin{equation}
+ A(\textbf(z)) = a\textbf(z)
+\end{equation}  
+are called Eigenvalues and eigenvectors. 
+What that means?? Graphically the eingenvector of a Linear transformation is the direction for which vectors in that direction that after the transformation will have the same direction but a different length.
+
+\subsubsection{How to compute them}
+In order to compute them let's  take a look to the formula:
+\[ A(\textbf{z}) = a\textbf{z} \]
+We said that a linear transformation can be represented by a matrix so the formula becomes:
+ \[ \textbf{A}\textbf{z} = a\textbf{z} \]
+ \[(\textbf{A} - a\textbf{I}) * \textbf{z} = 0\]
+ Let's define \textbf{A} matrix as:
+ \[\begin{vmatrix}
+-1 & 1\\0 & -2 
+ \end{vmatrix}\]
+ so $(\textbf{A} - a\textbf{I}) = 0$ (Now we look for determinant that is 0,.. dont ask why) is:
+  \[\begin{vmatrix}
+-1 - a & 1\\0 & -2 - a
+ \end{vmatrix} = 0 \]
+The solutions are found solving:
+\[a^2 + 3a + 2 = (a + 1)(a + 2) = 0 \Rightarrow a_0 = -1 a_1=-2\]
+Those are the eigenvalues. To find the vectors you must solve the equation \[(\textbf{A} - a\textbf{I}) * \textbf{z} = 0\] using each eigenvalue.
 \chapter{Let's start}
 
 In this chapter we are going to see the very basic of Neural Network like \textit{Neurons}, \textit{Links}, \ldots.
@@ -143,6 +275,9 @@ Or Activation function are chosen during model creation in fact they are Hyper-P
     \label{img:activation-functions-basic}
 \end{figure}
 
+\subsubsection{Diagonalization}
+
+A matrix that represents a linear transformation can be \textit{Diagonilized} by changing the basis in the one composed with only Eigenvectors. Each dimension is represented by one of those vectors so the matrix has to contain all eigenvalues to perform such operation. In this way it become a diagonal matrix filled by eigenvalues. 
 
 \section{Multi-input Neuron}
 Usually neuron has more than one input at time. Each of them want a private \textit{w} while \textit{b} the bias is one for all. Under this light we can say that input \textbf{i} is a column vector of $i_0,.., i_n$ elements and neuron contains a scalar \textit{b} and a vectors of \textbf{w} of n weights. Using \textit{f} as linear function $f(x) =x + 1$ the neuron perform this equation:
@@ -216,10 +351,12 @@ This Multi-layer neural Network is called \textbf{Feed Forward Neural Network}
 Feed forward neural network has layers and layer has neurons. Each Neuron take a input vector \textbf{i} and produce a scalar \textit{a}. Differently, Recurrent Neural Network takes two input vector the input vector \textbf{i} and some \textit{a'} that is the output of the previous input. Let's imagine we have a time series of data $i_0,...,i_t$. This data must be given to the model respecting the sequence but we want model somehow remember previous data. For this kind of task Recurrent Neural Network was created. They have layers and neurons but each neuron has two vectors and a bias: \textit{u} weights for the input, \textit{w} weights for its layer output at the previous step and \textit{b} the bias. Let me explain in a intuitive way before using math: the input is a series of vectors. First vector $i_0$ is taken and is given to the first layer of the model. Each neurons of this layer get the input vector $i_0$ and produce a scalar $a_0$ and with other neurons output of that layer it creates the layer output \textit{a}  Nothing new until now. Output goes to the second layer and so on until last layer. Second input is taken $i_1$ and neuron  receives it and the previous layer output \textit{a}. Using both of them it compute the next scalar output $nexta_0$. And so on! 
 
 Let's define its behavior using some cool math. Our network is composed by 1 layer with 1 neuron:
-%\begin{equation}
-%  inputsequence=\textbf{i_0}, \ldots ,\textbf{i_k} \\
-%  f_{neuron} = ActivationFunc( b + \textbf{w}*a'_{t - 1} + \textbf{u}*\textbf{i_t}) = a_{t}
-%\end{equation}
+\begin{equation}
+  inputsequence= \textbf{i}_0, \ldots ,\textbf{i}_k 
+\end{equation}
+\begin{equation}
+  f_{neuron} = ActivationFunc( b + \textbf{w}*a'_{t - 1} + \textbf{u}*\textbf{i}_t) = a_{t}
+\end{equation}
 The neuron takes at time t in input $a'_{0,t - 1}$ and $i_{0,t}$ and produce $a_{t}$. In this case with just one neuron the layer output coincide with the neuron output. After that the following equation is performed to compute $a'_t$
 \begin{equation}
 a'_t = c + \textbf{v}a_t
@@ -227,14 +364,75 @@ a'_t = c + \textbf{v}a_t
 
 Let's imagine to have a Recurrent Neural Network with more layers and more neurons for each layers. The above equations become:
 \begin{equation}
-\textbf{a_t} = ActivationFunc(\textbf{b} + \textbf{W}*\textbf{a'_{l,t-1} + \textbf{U}*\textbf{i_t}
+\textbf{a}_t = ActivationFunc(\textbf{b} + \textbf{W}*\textbf{a'}_{l,t-1} + \textbf{U}*\textbf{i}_t)
 \end{equation}
 $a'_{l,t-1}$ means the column vector output from the layer $l$ at time step $t-1$
 \begin{equation}
-\textbf{a'_{l,t}} = \textbf{c} + \textbf{V}\textbf{a_{l,t}} 
+\textbf{a'}_{l,t} = \textbf{c} + \textbf{V}\textbf{a}_{l,t} 
 \end{equation} 
 
+That is all my dear.. Not true, we are going to expand this kind of network later
 
+\subsection{Keep in mind}
+Some tips to keep in mind when you work with Recurrent Neural Network
+\begin{itemize}
+\item Externally are similar to feed forward network.. it has layers and neurons
+\item The inputs are sequence of inputs vectors
+\item Output is a series of vectors one for each inputs vector but if a prediction is what u want last output must be used.
+\item At any time neuron takes exactly 2 input vectors in input and they are the output from prior layer and output for its layer but a time t-1. 
+\item For each input vectors neurons has a weight vector this means that a layer has a \textbf{W} and \textbf{U} weight. The first for its own output and the second for the output of the previous layer.
+\item Output of a layer is turned in a input performing $c + \textbf{V}a_l$ where c is a bias and \textbf{V} is a weight matrix.
+\end{itemize}
+
+\section{Some Applications}
+In this section we are going to see how the previously explained network are used in a very easy problem:
+\emph{
+We have some fruits composed by oranges and apples and we need a model capable to tell us if a given fruit is one or it is the other. Fruits is defined by size, dimension, weight.
+}
+
+Let be $i_a = \begin{vmatrix}
+1 & -1 & -1
+\end{vmatrix}$ the vector that represent an apple and  $i_o = \begin{vmatrix}
+1 & 1 & -1
+\end{vmatrix}$ the one that represent an orange. 
+
+\subsection{Perceptron}
+Perceptron is a binary classifier based on single layer \textbf{Feed Forward Network} with \textbf{Hard Limit} as activation function. So if the output is minor than 0 the function produces 0 otherwise 1.
+
+\begin{equation}
+output = HardLims(\textbf{W}\textbf{i} + \textbf{b})
+\end{equation}
+
+\textbf{W} is a matrix $nxm$ where n is the dimension of the input vector (3 in this case) and $m$ the number of neurons in the layer.
+
+Let's define $W = [0, 1, 0]$ for a single neuron layer. This is called \textbf{Single-Neuron Perceptron}. Now we can test it against our data.
+\newline
+\textbf{Apple} defined as  $i_a = \begin{vmatrix}
+1 & -1 & -1
+\end{vmatrix}$ is multiplied by \textbf{W}
+\begin{equation}
+[0, 1, 0] * \begin{vmatrix}
+1 & -1 & -1
+\end{vmatrix}^T = 0*1 + 1*-1 * 0*1 = -1
+\end{equation}
+\textit{For simplicity input vector is not in column but it should be. Don't judge me}
+\begin{equation}
+hardlims(-1) = -1
+\end{equation}
+Ok! model classify apple as -1 let's check if orange are classified as 1
+\begin{equation}
+[0, 1, 0] * \begin{vmatrix}
+1 & 1 & -1
+\end{vmatrix}^T = 0*1 + 1*1 * 0*1 = 1
+\end{equation}
+\begin{equation}
+hardlims(1) = 1
+\end{equation}
+
+OMG!!!! That is amazing... or not but anyway with a weight vector $[0, 1, 0]$ model is able to classify the fruits. Now try with banana and tell me if it works! COME ON!
+
+\chapter{Basic Concepts about learning rules}
+\input{./chapter_learning_rules_for_perceptron_network.tex}
 
 
 
