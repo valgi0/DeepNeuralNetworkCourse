@@ -12,22 +12,47 @@
 \contentsline {section}{\numberline {2.2}Linear Transformation}{5}{section.2.2}% 
 \contentsline {subsection}{\numberline {2.2.1}Eigenvalues eigenvectors}{6}{subsection.2.2.1}% 
 \contentsline {subsubsection}{\nonumberline How to compute them}{6}{section*.1}% 
-\contentsline {chapter}{\numberline {3}Let's start}{7}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Single Neuron}{7}{section.3.1}% 
-\contentsline {subsection}{\numberline {3.1.1}Example of neuron}{7}{subsection.3.1.1}% 
-\contentsline {section}{\numberline {3.2}Transfer functions}{7}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}Multi-input Neuron}{8}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}Example}{9}{subsection.3.3.1}% 
-\contentsline {section}{\numberline {3.4}Multi-neurons}{9}{section.3.4}% 
-\contentsline {section}{\numberline {3.5}Multi Layers}{10}{section.3.5}% 
-\contentsline {section}{\numberline {3.6}Recurrent Neural Network}{10}{section.3.6}% 
-\contentsline {subsection}{\numberline {3.6.1}Keep in mind}{11}{subsection.3.6.1}% 
-\contentsline {section}{\numberline {3.7}Some Applications}{11}{section.3.7}% 
-\contentsline {subsection}{\numberline {3.7.1}Perceptron}{11}{subsection.3.7.1}% 
-\contentsline {chapter}{\numberline {4}Basic Concepts about learning rules}{13}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Learning rules for Perceptron Architecture}{13}{section.4.1}% 
-\contentsline {subsection}{\numberline {4.1.1}Perceptron Network again}{13}{subsection.4.1.1}% 
-\contentsline {subsection}{\numberline {4.1.2}Decision Boundary for Multiple Neurons}{14}{subsection.4.1.2}% 
-\contentsline {section}{\numberline {4.2}Learning rules for Perceptron Network}{15}{section.4.2}% 
-\contentsline {subsection}{\numberline {4.2.1}Example}{15}{subsection.4.2.1}% 
-\contentsline {section}{\numberline {4.3}Perceptron Network Limitation}{16}{section.4.3}% 
+\contentsline {section}{\numberline {2.3}Probability}{7}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}Conditional Probability}{7}{subsection.2.3.1}% 
+\contentsline {paragraph}{\nonumberline Exercise}{8}{section*.2}% 
+\contentsline {subsection}{\numberline {2.3.2}Chain rule of probability}{8}{subsection.2.3.2}% 
+\contentsline {subsection}{\numberline {2.3.3}Marginal Probability}{8}{subsection.2.3.3}% 
+\contentsline {subsection}{\numberline {2.3.4}Relationships between variables}{9}{subsection.2.3.4}% 
+\contentsline {chapter}{\numberline {3}Let's start}{11}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Single Neuron}{11}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}Example of neuron}{11}{subsection.3.1.1}% 
+\contentsline {section}{\numberline {3.2}Transfer functions}{11}{section.3.2}% 
+\contentsline {subsubsection}{\nonumberline Diagonalization}{12}{section*.5}% 
+\contentsline {section}{\numberline {3.3}Multi-input Neuron}{12}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}Example}{13}{subsection.3.3.1}% 
+\contentsline {section}{\numberline {3.4}Multi-neurons}{13}{section.3.4}% 
+\contentsline {section}{\numberline {3.5}Multi Layers}{14}{section.3.5}% 
+\contentsline {section}{\numberline {3.6}Recurrent Neural Network}{14}{section.3.6}% 
+\contentsline {subsection}{\numberline {3.6.1}Keep in mind}{15}{subsection.3.6.1}% 
+\contentsline {section}{\numberline {3.7}Some Applications}{15}{section.3.7}% 
+\contentsline {subsection}{\numberline {3.7.1}Perceptron}{15}{subsection.3.7.1}% 
+\contentsline {chapter}{\numberline {4}Basic Concepts about learning rules}{17}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Learning rules for Perceptron Architecture}{17}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Perceptron Network again}{17}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}Decision Boundary for Multiple Neurons}{18}{subsection.4.1.2}% 
+\contentsline {section}{\numberline {4.2}Learning rules for Perceptron Network}{19}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}Example}{19}{subsection.4.2.1}% 
+\contentsline {section}{\numberline {4.3}Perceptron Network Limitation}{20}{section.4.3}% 
+\contentsline {chapter}{\numberline {5}Markov Decision Processes}{21}{chapter.5}% 
+\contentsline {chapter}{\numberline {6}Generative Models}{23}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Energy based model}{23}{section.6.1}% 
+\contentsline {subsection}{\numberline {6.1.1}How it work?}{23}{subsection.6.1.1}% 
+\contentsline {section}{\numberline {6.2}Boltzman Machine}{24}{section.6.2}% 
+\contentsline {subsection}{\numberline {6.2.1}Restricted Boltzman Machine}{25}{subsection.6.2.1}% 
+\contentsline {chapter}{\numberline {7}EXTRA: Neural Symbolic Integration}{27}{chapter.7}% 
+\contentsline {subsection}{\numberline {7.0.1}Today}{27}{subsection.7.0.1}% 
+\contentsline {section}{\numberline {7.1}Neural Symbolic Cognitive Agent (NSCA)}{27}{section.7.1}% 
+\contentsline {subsection}{\numberline {7.1.1}References}{28}{subsection.7.1.1}% 
+\contentsline {chapter}{\numberline {8}Reinforcement Learning}{29}{chapter.8}% 
+\contentsline {section}{\numberline {8.1}Resources}{29}{section.8.1}% 
+\contentsline {section}{\numberline {8.2}Extra theory: basic knowledge}{29}{section.8.2}% 
+\contentsline {subsection}{\numberline {8.2.1}Reinforcement Learning}{29}{subsection.8.2.1}% 
+\contentsline {subsection}{\numberline {8.2.2}BellMan Equation}{30}{subsection.8.2.2}% 
+\contentsline {subsection}{\numberline {8.2.3}Stochastic variable... OMG}{32}{subsection.8.2.3}% 
+\contentsline {subsection}{\numberline {8.2.4}Rewarding}{33}{subsection.8.2.4}% 
+\contentsline {subsection}{\numberline {8.2.5}Q-Learning}{35}{subsection.8.2.5}% 

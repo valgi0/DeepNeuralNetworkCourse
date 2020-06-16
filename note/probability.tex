@@ -1,0 +1,98 @@
+Let's talk about probability. In machine learning and Deep learning probability is essential cause the are stochastic fields and not deterministic ones. Let's define a variable $x_r$ as a random variable on a dice domain. This means that it can be each value within 1,2,3,4,5,6 with the same probability. 
+
+Let's speak about \textbf{Probability Mass Function} as the probability that some variables can be found in a certain state.
+For example $P(x_r = 1) = 1/6$ (For completeness it's possible to write this function in other ways: $x_r \sim P(1)$ or $P_{x_r}(1) $. 
+
+We can have more dices and we can define  \textbf{Joint Probability} as a Probability Mass Function defined on more variables: $P(x_r = 1, y_r = 2)$ that denotes the probability that $x_r = 1$ and $y_r = 2$ at once.
+
+$P(x)$ must follow some properties:
+\begin{itemize}
+ \item $\forall x_i \in x_r 0 < P(x_i) < 1$
+ \item $\forall x_i \in x_r \sum P(x_i) = 1  $
+ \end{itemize} 
+ 
+ But htis works for discrete variable, for continuous variable defined on $\mathbb{R}$ things become harder. We define the probability to find the variable in a range of value. Let's define the range as $[a,b]$ with $a,b \in \mathbb{R}$ and $b>=a$. Let's define $p$ the \textbf{Probability density function} as the function that denotes the probability of the input variable to be found with a value in the given range: $p(x_r; a, b)$. This function draws a linear function that must follow some properties:
+ \begin{itemize}
+  \item Area beneath the function must be 1: $\int p(x)dx = 1$
+  \item $p(x) >= 0$ 
+  \end{itemize} 
+  
+  \subsection{Conditional Probability}
+  
+  Let's define two events $x_0, y_0$ and for some reason they are connected in some way. Now we want to compute the probability of $y_r = y_0$ knowing that  $x_r = x_0$ has happened. In this case we speak about \textbf{Conditional Probability} and it's defined: 
+  \begin{equation}
+    P( y_r = y_0|x_r = x_0) = \frac{P( y_r = y_0, x_r = x_0)}{P(x_r = x_0)}
+  \end{equation}
+  
+  
+ For examples let's use ours dices. We want to know the probability to get $y_r = 1$ if we already got $x_r = 1$. 
+ So $P(1 | 1) = \frac{P(1, 1)}{P(1)}$ in this case we get: $\frac{1/36}{1/6} = \frac{6}{36} = \frac{1}{6}$ what we get in this case is the two dices are independent, the probability to have 1 in the second dice doesn't change respect the first.  
+ 
+ Some times we know the probability of $P(x|y)$ and the probability of $P(x)$. We would like to know the probability of $P(x|y)$. To get that we can use the \textbf{Bayes' Rule}: 
+
+\begin{equation}
+ P(x_r = x_0 | y_r = y_0) = \frac{P(x_0)P(y_0 | x_0)}{P(y_0)}
+\end{equation} 
+
+ It's time to do some exercises.
+ \paragraph{Exercise}
+ Let's have Robert a funny boys who is going to get a dog. In the shop there are 6 dogs: 4 males and 2 females and the shopper has to chose the dog for him randomly. Furthermore he has already thought about names: if dog is male the name is one of: Spike, Mike, Andy. Otherwise, if the animal is female, the name could be: Sally or Andy.
+ In this situation we want to know the probability the dog will be called Sally, the probability that if the dog was called Andy it would be male.
+
+First we need compute the probability to get a dog named Sally:
+
+\[P(name = Sally) = P(dog = male)*P(name=Sally | dog=male)  = 4/6 * 1/2 = 1/3\]
+
+$P(dog = male | name = Andy)$ for this case we have to use Bayes' Rule:
+
+$\frac{P(dog=male)P(name = Andy | dog = male)}{P(name = Andy)}$.
+
+We need the probability $P(name=Andy)$ and it is:
+
+ $P(dog=male)*P(name=Andy | dog=male) + P(dog=female)*P(name=Andy | dog=female)  = 7/18$
+
+ Let's resolve this:
+
+$\frac{4/6 * 1/3}{7/18} = 2/9 * 18/7 = 4/7$
+
+\subsection{Chain rule of probability}
+
+The chain rule let us decompose a joint distribution in a conditional distributions over only one variables.
+For examples we have 3 discrete variables:
+
+$P(a,b,c) $ can be rewritten over $c$: $P(c) * P(b|c) * P(a | b,c)$
+
+We can generalize this property using this formula:
+
+\begin{equation}
+P(x_0, ..., x_n) = P(x_0) \prod_{i = 1}^n P(x_i | x_0, ... , x_{i-1})
+\end{equation}
+
+That is. Nothing more and nothing less
+
+\subsection{Marginal Probability}
+
+Let's imagine we have a set of discrete variables $x_0, ... , x_n \in \mathbb{S}$ and we know the probability distribution over them. Now we want to know the probability distribution over a subset of them $x_k, .. , x_m \in \mathbb{S}'$. This distribution is called \textbf{Marginal distribution} and can be calculated using the \textbf{sum rule}:
+\begin{equation}
+\forall x_i \in \mathbb{S}', P(x_i) = \sum_{x \neq x_i \in \mathbb{S}} P(x_0, ... , x_i, ..., x_n)
+\end{equation}
+
+For continuous variables the formula exploits the derivatives. Let's imagine we have two variable $x,y$:
+\begin{equation}
+p(x) = \int p(x, y)*dy
+\end{equation}
+
+\subsection{Relationships between variables}
+Let's have two variables $x,y$. We can say they are \textbf{independent} if  their probability distribution can be expressed as the product of the tow factors:
+\begin{equation}
+ p(x = x_i, y = y_i) = p(x = x_i)p(y=y_i) \forall x_i, y_i 
+ \end{equation} 
+ 
+ we also can say they are \textbf{Conditional Independent} if  given a event $z$ the probability distribution can be factorized as:
+ 
+ \begin{equation}
+ p(x = x_i, y = y_i | z ) = p(x=x_i | z) p(y=y_i | z)
+ \end{equation}
+ 
+ If two variable are are independent we can denote that using: $x \perp y$. \linebreak
+ If two variable are conditional independent we can denote that using   $x \perp y | z$

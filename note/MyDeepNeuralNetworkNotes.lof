@@ -2,8 +2,20 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces log-sigmoid function\relax }}{7}{figure.caption.2}% 
-\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Overview of basic activation functions\relax }}{8}{figure.caption.3}% 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces log-sigmoid function\relax }}{11}{figure.caption.3}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Overview of basic activation functions\relax }}{12}{figure.caption.4}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Overview of a Perceptron Network\relax }}{14}{figure.caption.4}% 
-\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Graphic representation of the decision boundary\relax }}{14}{figure.caption.6}% 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Overview of a Perceptron Network\relax }}{18}{figure.caption.6}% 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Graphic representation of the decision boundary\relax }}{18}{figure.caption.8}% 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces boltzman machine model\relax }}{24}{figure.caption.9}% 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces restricted boltzman machine model\relax }}{25}{figure.caption.10}% 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Overview of Reinforcement Learning system\relax }}{30}{figure.caption.11}% 
+\contentsline {figure}{\numberline {8.2}{\ignorespaces RL - Maze task\relax }}{31}{figure.caption.12}% 
+\contentsline {figure}{\numberline {8.3}{\ignorespaces RL - Maze task with values from bellman equation\relax }}{32}{figure.caption.13}% 
+\contentsline {figure}{\numberline {8.4}{\ignorespaces RL - Maze task with all values changed because in each cell there is a probability to fall in two wrong cells\relax }}{33}{figure.caption.14}% 
+\contentsline {figure}{\numberline {8.5}{\ignorespaces RL - Maze task with all values changed because in each cell there is a probability to fall in two wrong cells. We can see the actions that agent will try to take in each cell\relax }}{34}{figure.caption.15}% 
+\contentsline {figure}{\numberline {8.6}{\ignorespaces RL - Actions for the maze with different Living Penalty\relax }}{34}{figure.caption.16}% 

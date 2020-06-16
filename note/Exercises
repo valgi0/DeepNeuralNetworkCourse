@@ -1,0 +1,46 @@
+
+----------------------------------------------------
+		PROBABILITY
+----------------------------------------------------
+
+
+Exercise: Bayes' Rule 1
+
+There are two urns containing colored balls. The first urn contains 50 red balls and 50 blue balls. The second urn contains 30 red balls and 70 blue balls. One of the two urns is randomly chosen (both urns have probability $50%$ of being chosen) and then a ball is drawn at random from one of the two urns. If a red ball is drawn, what is the probability that it comes from the first urn? 
+
+u1 = 100 balls (50 red 50 blue)
+u2 = 100 balls (30 red, 70 blue)
+
+P(c = r | u1 ) = 0.5
+P(c = r | u2 ) = 0.3
+
+P( u = u1 | c = r) = [P(u1) * P(c=r | u1)] / P(r)
+
+= [0.5 * 0.5 / P(r) ] -> we need P(r)
+
+P(r) = P(u1) * P(c = r | u1 ) + P(u2) * P(c = r | u2 )
+P(r) = 0.5 * 0.5 + 0.5 * 0.3 = 1/2 * 1/2 + 1/2 * 3/10 = 1/4 + 3/20 = 2/5
+
+P( u = u1 | c = r) = 1/4 * 5/2 = 5/8
+
+Answer: the probability to ball comes from u1 is 5/8
+
+......................................................................
+
+Exercise: Bayes' Rule 2
+
+An economics consulting firm has created a model to predict recessions. The model predicts a recession with probability 80% when a recession is indeed coming and with probability 10% when no recession is coming. The unconditional probability of falling into a recession is 20%. If the model predicts a recession, what is the probability that a recession will indeed come?
+
+
+P( rp = yes | rt = True ) = 0.8
+P( rp = yes | rt = False ) = 0.1
+P(rt = True) = 0.2
+
+Question: P(rt = True | rp = Yes) = [ P(rt = True) * P(rp = Yes | rt = True) ] / P(rp = Yes) -> we need P(rp = Yes)
+
+P(rp = Yes) = 0.8 * 0.2 + 0.1 * (1 - 0.2) = 0.16 + 0.08 = 0.24
+
+P(rt = True | rp = Yes) = [ 0.2 * 0.8 ] / 0.24 = 0.16 / 0.24 = 0.666 = 2/3
+
+Answer: the probability the recession will come is 0.666
+
