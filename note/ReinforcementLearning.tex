@@ -155,3 +155,99 @@ As we can see it is identical to the final piece of bellman equation. But we sti
 \begin{equation}
 Q(s,a) = R(s,a) + y \sum_{n} P(s,a,s'_n) max_{a'}Q(s'_n, a')
 \end{equation}
+
+\subsection{Temporal Difference}
+
+Now it obvious ask ourselves  if the same action at different time can have different value or precisely different q-function results. Let's introduce the temporal difference concept.
+
+\textbf{Intuition}. Let's say our agent is for the first time in the maze. Let's place him in (1,1) at the very start. Now he can go in both direction (2,1) o (1,2). By now he has no idea of the path for the reward so he evaluates them equally: $Q(a_0, s) = Q(a_1,s)$. After some exploration he is back in the first cell (1,1). The cell is the same as before, the possible actions are the same as before but now he knows the best path so $Q(a_0, s) > Q(a_1,s)$. That means that $Q_{t_0}(a_0, s) < Q_{t_n}(a_0,s)$ because agent learned the best path. The same action from the same cell can have different importance according to the time it is performed because agent learn at each time.
+
+Let's define this concept introducing $t$ the time:
+\begin{equation}
+Q_{t_1}(s,a) = Q_{t_0}(s,a) + { Q_{t_1}(s,a) - Q_{t_0}(s,a) }
+\end{equation} 
+From the above equation we can see that the $Q$ at time $t$ is the $Q$ at time $t-1$ plus the difference between them. Very easy .. doesn't it?. This difference is what agent has learned.
+Let's call $Q_{t_1}(s,a) - Q_{t_0}(s,a) = TD(s,a)$ the temporal difference between the same action $a$ in the same state $s$ but in different times. We can now rewrite the equation as:
+\begin{equation}
+Q_{t_1}(s,a) = Q_{t_0}(s,a) +\alpha TD(s,a)
+\end{equation}
+$\alpha$ is a parameter that tell to the agent how much care to the past $Q_{t_0}$ or to the knowledge learned $TD$
+In order to better understand let's expand the equation:
+\begin{equation}
+Q_{t_1}(s,a) = Q_{t_0}(s,a) + \alpha(R(s,a) + max_a Q(s',a') - Q_{t_0}(s,a))
+\end{equation}
+From this equation we can see that if $\alpha$ is set to 1 we have this:
+\begin{equation}
+Q_{t_1}(s,a) = R(s,a) + max_a Q(s',a')
+\end{equation}
+So the entire old value of $Q_{t_0}$ is replaced be the new value that comes from what agent has learned ( that is inside: $max_a Q(s',a')$). Otherwise, if we put $\alpha$ to 0 we 
+ have:
+ \begin{equation}
+Q_{t_1}(s,a) = Q_{t_0}(s,a)
+\end{equation}
+From this equation we can see that nothing has changed so agent has learned nothing. This means that $\alpha$ is a coefficient that weight how much agent has to update its knowledge according to his new discoveries. Let's call $\alpha$ \textbf{learning rate} and this process \textbf{Q-Learning Process}. At the beginning of this process $Q(s,a)$ will be very low (or wrong) and the $TD$ very high. After some passages, when agent has learned the optimal path so the optimal action $Q(s,a)$ will be high (or optimal) and $TD$ will be low because agent can't learn something new.
+
+\section{Deep Q-Learning}
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.45]{img/rl-deepql1.png}
+    \caption{RL - Deep Neural Network overview for deep q-learning}
+    \label{img:RL-deep-ql}
+\end{figure}
+
+The idea of \textbf{Deep Q-Learning} is to use a neural network to learn the best action to do in a given place. So the model should take in input $s$ expressed as a pair $<x_0, x_1>$ and it tries to predict the right action. So it gives in output a vector $<q_0, q_1, q_2, q_3>$ that represent the q-learning value associated to each action. \textit{This algorithm (deep q-learning) can be applied just when you have discrete actions like in this case.}
+
+\subsection{Experience Replay}
+
+The agent performs some actions and save them in a memory as experience. Then it select some of the past action, using a uniform distribution, and evaluate them. 
+
+\texttt{To read: Prioritized Experience Replay - google deepmind 2016}
+
+Experience Replay has different implementation so we have to define some policies like: max number of experience to save, how to discharge past experience for new ones, how to select them etc etc. 
+
+\subsection{Action Selection Policy}
+%% to do
+
+\subsection{Deep Q-Learning: The algorithm}
+
+First of all we need to put agent in a context. Then we need to define \textbf{Experience Replay Policy} and we are ready to start. So our agent will be in a state $s$ and he can do the same 4 actions: up, down, right, left. So he will try to do the best action predicting the Q-Value for each possible action. Let's say he predicts $[Q^p(s,up), Q^p(s,down), Q^p(s,right),Q^p(s,left)]$. The first time he will predict random value for instance: $[0.1, 0.1, 0.4, 0.05]$. According to our action selection policy he will select one action to do, let's say it select the one with the best score so: right. Now agent moves right and enters in a new state $s'$. Let's say he also get a reward $r = 1$ so now he can compute a better q-value for the action $right$ from state $s$: $Q^t(s,right) = R(s, right) + ymax_aQ(s', a) = r + 0 = 1$. Now agent can save in memory the experience using the tuple $(state = s, action = right, reward = r, end_state = s')$, for clarity let's express this tuple using time because agent can experience the same situation more times so  $(state_t = s, action_t = right, reward_t = r, end_state_t = s')$. He also save for that experience the predicted q-values.
+
+
+It's time for the agent to learn. He predicted for this action the q-value $Q^p_{right} = 0.4$ then he performed the action and he discovered that a more precise q-value was $Q^t(s,right) = 1$ so he can use the loss function $Loss(Q^p, Q^t) = (Q^t - Q^p)^2$ and than he can back-propagate the gradient of the function to update weights as in a normal Neural Network.
+
+ Let's add a new complexity, the memory. When agent has to learn he doesn't use just that experience but he select from his memory also N - 1 past experiences $e_0, e_1,..., e_{n - 1}$. He adds the new experience he has just performed and he get a pool of N experiences. Now it try to learn also form those experiences using the loss function:
+ \begin{equation}
+ Loss = \frac{1}{2} \sum_e ((Q^t(s,a) - Q^p_e(s,a))^2
+ \end{equation}
+ \newpage
+ \section{Formula Summary}
+ Bellman Equation:
+ \begin{equation}
+ V(s) = max_a(R(s,a) + yV(s'))
+ \end{equation}
+ Bellman Equation in a Markov Decision Process:
+ \begin{equation}
+ V(s) = max_a(R(s,a) + y \sum_n P(s,a,s'_n)V(s'_n))
+ \end{equation}
+ Q-Learning Equation:
+ \begin{equation}
+ Q(s,a) = R(s,a) + y \sum_n P(s,a,s'_n)V(s'_n) = R(s,a) + y \sum_n P(s,a,s'_n)max_{a'}Q(s'_n, a')
+ \end{equation}
+ Q-Learning Equation simplified (\textit{This equation substitutes the previous just because it is shorter, for simplicity}):
+  \begin{equation}
+ Q(s,a) = R(s,a) + ymax_{a'}Q(s'_n, a')
+ \end{equation}
+ 
+ 
+ 
+ Temporal Difference:
+ \begin{equation}
+ TD(s,a) = Q_{t1}(s,a) - Q_{t0}(s,a)
+ \end{equation}
+ \begin{equation}
+ Q_{t1}(s,a) = Q_{t0}(s,a) +\alpha(Q_{t1}(s,a) - Q_{t0}(s,a)) =  Q_{t0}(s,a) +\alpha TD(s,a)
+ \end{equation}
+ \begin{equation}
+ Q_{t_1}(s,a) = Q_{t_0}(s,a) + \alpha(R(s,a) + max_a Q(s',a') - Q_{t_0}(s,a))
+ \end{equation}
+ 

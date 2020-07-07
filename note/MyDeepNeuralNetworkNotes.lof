@@ -8,14 +8,17 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Overview of a Perceptron Network\relax }}{18}{figure.caption.6}% 
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Graphic representation of the decision boundary\relax }}{18}{figure.caption.8}% 
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces boltzman machine model\relax }}{24}{figure.caption.9}% 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces restricted boltzman machine model\relax }}{25}{figure.caption.10}% 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces How the backpropagation works\relax }}{22}{figure.caption.9}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Overview of Reinforcement Learning system\relax }}{30}{figure.caption.11}% 
-\contentsline {figure}{\numberline {8.2}{\ignorespaces RL - Maze task\relax }}{31}{figure.caption.12}% 
-\contentsline {figure}{\numberline {8.3}{\ignorespaces RL - Maze task with values from bellman equation\relax }}{32}{figure.caption.13}% 
-\contentsline {figure}{\numberline {8.4}{\ignorespaces RL - Maze task with all values changed because in each cell there is a probability to fall in two wrong cells\relax }}{33}{figure.caption.14}% 
-\contentsline {figure}{\numberline {8.5}{\ignorespaces RL - Maze task with all values changed because in each cell there is a probability to fall in two wrong cells. We can see the actions that agent will try to take in each cell\relax }}{34}{figure.caption.15}% 
-\contentsline {figure}{\numberline {8.6}{\ignorespaces RL - Actions for the maze with different Living Penalty\relax }}{34}{figure.caption.16}% 
+\contentsline {figure}{\numberline {7.1}{\ignorespaces boltzman machine model\relax }}{28}{figure.caption.10}% 
+\contentsline {figure}{\numberline {7.2}{\ignorespaces restricted boltzman machine model\relax }}{29}{figure.caption.11}% 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Overview of Reinforcement Learning system\relax }}{34}{figure.caption.12}% 
+\contentsline {figure}{\numberline {9.2}{\ignorespaces RL - Maze task\relax }}{35}{figure.caption.13}% 
+\contentsline {figure}{\numberline {9.3}{\ignorespaces RL - Maze task with values from bellman equation\relax }}{36}{figure.caption.14}% 
+\contentsline {figure}{\numberline {9.4}{\ignorespaces RL - Maze task with all values changed because in each cell there is a probability to fall in two wrong cells\relax }}{37}{figure.caption.15}% 
+\contentsline {figure}{\numberline {9.5}{\ignorespaces RL - Maze task with all values changed because in each cell there is a probability to fall in two wrong cells. We can see the actions that agent will try to take in each cell\relax }}{38}{figure.caption.16}% 
+\contentsline {figure}{\numberline {9.6}{\ignorespaces RL - Actions for the maze with different Living Penalty\relax }}{38}{figure.caption.17}% 
+\contentsline {figure}{\numberline {9.7}{\ignorespaces RL - Deep Neural Network overview for deep q-learning\relax }}{40}{figure.caption.18}% 

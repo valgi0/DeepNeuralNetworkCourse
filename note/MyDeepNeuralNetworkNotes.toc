@@ -38,21 +38,34 @@
 \contentsline {section}{\numberline {4.2}Learning rules for Perceptron Network}{19}{section.4.2}% 
 \contentsline {subsection}{\numberline {4.2.1}Example}{19}{subsection.4.2.1}% 
 \contentsline {section}{\numberline {4.3}Perceptron Network Limitation}{20}{section.4.3}% 
-\contentsline {chapter}{\numberline {5}Markov Decision Processes}{21}{chapter.5}% 
-\contentsline {chapter}{\numberline {6}Generative Models}{23}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}Energy based model}{23}{section.6.1}% 
-\contentsline {subsection}{\numberline {6.1.1}How it work?}{23}{subsection.6.1.1}% 
-\contentsline {section}{\numberline {6.2}Boltzman Machine}{24}{section.6.2}% 
-\contentsline {subsection}{\numberline {6.2.1}Restricted Boltzman Machine}{25}{subsection.6.2.1}% 
-\contentsline {chapter}{\numberline {7}EXTRA: Neural Symbolic Integration}{27}{chapter.7}% 
-\contentsline {subsection}{\numberline {7.0.1}Today}{27}{subsection.7.0.1}% 
-\contentsline {section}{\numberline {7.1}Neural Symbolic Cognitive Agent (NSCA)}{27}{section.7.1}% 
-\contentsline {subsection}{\numberline {7.1.1}References}{28}{subsection.7.1.1}% 
-\contentsline {chapter}{\numberline {8}Reinforcement Learning}{29}{chapter.8}% 
-\contentsline {section}{\numberline {8.1}Resources}{29}{section.8.1}% 
-\contentsline {section}{\numberline {8.2}Extra theory: basic knowledge}{29}{section.8.2}% 
-\contentsline {subsection}{\numberline {8.2.1}Reinforcement Learning}{29}{subsection.8.2.1}% 
-\contentsline {subsection}{\numberline {8.2.2}BellMan Equation}{30}{subsection.8.2.2}% 
-\contentsline {subsection}{\numberline {8.2.3}Stochastic variable... OMG}{32}{subsection.8.2.3}% 
-\contentsline {subsection}{\numberline {8.2.4}Rewarding}{33}{subsection.8.2.4}% 
-\contentsline {subsection}{\numberline {8.2.5}Q-Learning}{35}{subsection.8.2.5}% 
+\contentsline {chapter}{\numberline {5}Training a model}{21}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Objective function: overview}{21}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Different kinds of Loss Function}{21}{section.5.2}% 
+\contentsline {section}{\numberline {5.3}Optimizer}{21}{section.5.3}% 
+\contentsline {subsection}{\numberline {5.3.1}BackPropagation and lr}{22}{subsection.5.3.1}% 
+\contentsline {chapter}{\numberline {6}Markov Decision Processes}{25}{chapter.6}% 
+\contentsline {chapter}{\numberline {7}Generative Models}{27}{chapter.7}% 
+\contentsline {section}{\numberline {7.1}Energy based model}{27}{section.7.1}% 
+\contentsline {subsection}{\numberline {7.1.1}How it work?}{27}{subsection.7.1.1}% 
+\contentsline {section}{\numberline {7.2}Boltzman Machine}{28}{section.7.2}% 
+\contentsline {subsection}{\numberline {7.2.1}Restricted Boltzman Machine}{29}{subsection.7.2.1}% 
+\contentsline {chapter}{\numberline {8}EXTRA: Neural Symbolic Integration}{31}{chapter.8}% 
+\contentsline {section}{\numberline {8.1}Introduction to Neural Symbolic Integration}{31}{section.8.1}% 
+\contentsline {subsection}{\numberline {8.1.1}Logic As Constrain}{32}{subsection.8.1.1}% 
+\contentsline {subsection}{\numberline {8.1.2}Logic As Task}{32}{subsection.8.1.2}% 
+\contentsline {section}{\numberline {8.2}Neural Symbolic Cognitive Agent (NSCA)}{32}{section.8.2}% 
+\contentsline {subsection}{\numberline {8.2.1}References}{32}{subsection.8.2.1}% 
+\contentsline {chapter}{\numberline {9}Reinforcement Learning}{33}{chapter.9}% 
+\contentsline {section}{\numberline {9.1}Resources}{33}{section.9.1}% 
+\contentsline {section}{\numberline {9.2}Extra theory: basic knowledge}{33}{section.9.2}% 
+\contentsline {subsection}{\numberline {9.2.1}Reinforcement Learning}{33}{subsection.9.2.1}% 
+\contentsline {subsection}{\numberline {9.2.2}BellMan Equation}{34}{subsection.9.2.2}% 
+\contentsline {subsection}{\numberline {9.2.3}Stochastic variable... OMG}{36}{subsection.9.2.3}% 
+\contentsline {subsection}{\numberline {9.2.4}Rewarding}{37}{subsection.9.2.4}% 
+\contentsline {subsection}{\numberline {9.2.5}Q-Learning}{39}{subsection.9.2.5}% 
+\contentsline {subsection}{\numberline {9.2.6}Temporal Difference}{39}{subsection.9.2.6}% 
+\contentsline {section}{\numberline {9.3}Deep Q-Learning}{40}{section.9.3}% 
+\contentsline {subsection}{\numberline {9.3.1}Experience Replay}{40}{subsection.9.3.1}% 
+\contentsline {subsection}{\numberline {9.3.2}Action Selection Policy}{41}{subsection.9.3.2}% 
+\contentsline {subsection}{\numberline {9.3.3}Deep Q-Learning: The algorithm}{41}{subsection.9.3.3}% 
+\contentsline {section}{\numberline {9.4}Formula Summary}{42}{section.9.4}% 

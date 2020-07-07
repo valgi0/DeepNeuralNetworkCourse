@@ -1,0 +1,36 @@
+\section{Introduction to Neural Symbolic Integration}
+Well, it is a real chaos out there but let's try to put things together. With \textbf{Neural Symbolic Integration} we mean the set of techniques used to combine Symbolic Approach with Neural network Approach. At the very beginning of the AI (1970 more or less) there were two different directions: \textbf{Symbolic AI} and \textbf{Connectionist AI} (or sub-symbolic). The former wants to explain the knowledge and the reasoning to get a task done by using Logic Rules as Prolog, or Descriptive Logic (Cond, Cond => State). The latter, on the other hand, wants to get best results with less effort. From this direction was born Machine Learning and in particular Deep Learning.
+
+So, on one hand we have symbolic approaches that are clear, transparent but less precises, less powerful, less applicable in real context due to scalability, distribution and so on. Those approaches are based on Logic (Symbols, Relation between them, abstract connection) and the manipulation of them and this approach is considered \textit{Top-Down} knowledge is from abstract representation using Logic and not in raw data and experience.
+
+ On the other hand we have connectionist approaches or sub-symbolic approaches that totally lacks of transparency but they can handle big data, they can scale and be distributed, they are power with good result. They also lack of a real reasoning. This approach use statistical function to extract information from raw data so it is called \textbf{Bottom-Up} because knowledge comes from raw data. They learn trough experience.
+
+So the \textbf{Neural Symbolic Integration} is the research fields that studies technique to put them together and get the most from both. The field also called Neural Symbolic Computation is one of the many that exist but it is the most promising so we speak about it as the only one. This field obtained new interesting by the research community very recently so it lacks of common tasks, common formalism and also common objectives that can make possible clear comparison between solutions. There are a lot of different solutions in the wild very different and the only thing in common is they try to put some logic with neural network.
+
+But in this heterogeneous mixing we can cluster solution in two groups:
+\begin{itemize}
+  \item  \textbf{Logic as Constrain} where logic is inserted directly into the neural model that to guide the training process, working as regularization factor. In this way a trained network has high-level knowledge inside.
+  \item \textbf{Differentiable Programming} or \textbf{Logic as Task}. The idea is to create a mapping between logic and numerical domain in order to use Neural network on the second to solve problems in the first. Logic guides the construction of an Equivalent Neural Network. 
+  \end{itemize}  
+
+
+\subsection{Logic As Constrain}
+%%todo
+\subsection{Logic As Task}
+%%todo
+
+
+ 
+ \section{Neural Symbolic Cognitive Agent (NSCA) }
+ from paper \textit{A Neural-Symbolic Cognitive Agent for Online Learning and Reasoning}.
+ The first point is existing models are too simplified and require too time to be used in online learning and reasoning. Furthermore, some high-order concepts have temporal relation hard to represent by hand. They propose a new model capable to learn new hypotheses from observed data in complex environment. More precisely the model is able to:
+ \begin{itemize}
+  \item Perform learning of complex temporal relations from uncertain observations
+   \item Reason probabilistically  about the knowledge learnd
+   \item Represent the  agent's knowledge in a logic-based format for validation purposes.
+  \end{itemize} 
+  It takes advance of Statistical learning and Symbolic Representation
+  
+  
+ \subsection{References}
+ \textit{https://arxiv.org/pdf/1905.06088.pdf} - Neural-Symbolic Computing: An Effective Methodology for Principled Integration of Machine Learning and Reasoning

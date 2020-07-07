@@ -443,6 +443,9 @@ OMG!!!! That is amazing... or not but anyway with a weight vector $[0, 1, 0]$ mo
 \chapter{Basic Concepts about learning rules}
 \input{./chapter_learning_rules_for_perceptron_network.tex}
 
+\chapter{Training a model}
+\input{./objfunc.tex}
+
 \chapter{Markov Decision Processes}
 Paper: A survey of Application of Markov decision processes
 Paper: Markov decision Process: concepts and algorithms
@@ -451,29 +454,7 @@ Paper: Markov decision Process: concepts and algorithms
 \input{./GenerativeChapter.tex}
 
 \chapter{EXTRA: Neural Symbolic Integration}
-
-Well, it is a real chaos out there but let's try to put things together. With \textbf{Neural Symbolic Integration} it is meant the set of techniques used to combine Symbolic Approach with Neural network Approach. At the very beginning of the AI (1970 more or less) there were two different directions: \textbf{Symbolic AI} and \textbf{Connectionist AI}. The former wants to explain the knowledge and the reasoning to get a task done by using Logic Rules as Prolog, or Descriptive Logic (Cond, Cond => State). The latter, on the other hand, wants to get best results with less effort. From this direction was born Machine Learning and in particular Deep Learning. 
-
-\subsection{Today}
-
-Today we desire a more transparent Deep Learning models, capable to a common-sense reasoning and to explain the results. In order to get this task one approach is to combine Symbolic methods with Neural Networks. In this way is possible to formally describe the reasoning of the neural networks by using logic. The approaches to do that can be categorized in three main groups:
-\begin{itemize}
-\item \textbf{Rule-based}
-\item \textbf{Formula-based}
-\item \textbf{Embedding}
-\end{itemize}
- 
- \section{Neural Symbolic Cognitive Agent (NSCA) }
- from paper \textit{A Neural-Symbolic Cognitive Agent for Online Learning and Reasoning}.
- The first point is existing models are too simplified and require too time to be used in online learning and reasoning. Furthermore, some high-order concepts have temporal relation hard to represent by hand. They propose a new model capable to learn new hypotheses from observed data in complex environment. More precisely the model is able to:
- \begin{itemize}
-  \item Perform learning of complex temporal relations from uncertain observations
-   \item Reason probabilistically  about the knowledge learnd
-   \item Represent the  agent's knowledge in a logic-based format for validation purposes.
-  \end{itemize} 
-  It takes advance of Statistical learning and Symbolic Representation
- \subsection{References}
- \textit{https://arxiv.org/pdf/1905.06088.pdf} - Neural-Symbolic Computing: An Effective Methodology for Principled Integration of Machine Learning and Reasoning
+\input{./nsi.tex}
 
 
 \chapter{Reinforcement Learning}

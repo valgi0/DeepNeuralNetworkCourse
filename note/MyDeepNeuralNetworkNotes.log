@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.6.10)  14 JUN 2020 10:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.6.10)  7 JUL 2020 16:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1224,13 +1224,13 @@ Class scrbook Warning: Usage of \IfUsePrefixLine outside section command
 (scrbook)              setting \IfUsePrefixLine to either \@firstoftwo or
 (scrbook)              \@secondoftwo before using it on input line 248.
 
-<img/log-sigmoid-function.png, id=232, 176.3388pt x 156.1032pt>
+<img/log-sigmoid-function.png, id=262, 176.3388pt x 156.1032pt>
 File: img/log-sigmoid-function.png Graphic file (type png)
 <use img/log-sigmoid-function.png>
 Package pdftex.def Info: img/log-sigmoid-function.png  used on input line 270.
 (pdftex.def)             Requested size: 114.61885pt x 101.46587pt.
 [11 <./img/log-sigmoid-function.png (PNG copy)>]
-<img/activation-functions-table.png, id=240, 450.0012pt x 579.1236pt>
+<img/activation-functions-table.png, id=270, 450.0012pt x 579.1236pt>
 File: img/activation-functions-table.png Graphic file (type png)
 <use img/activation-functions-table.png>
 Package pdftex.def Info: img/activation-functions-table.png  used on input line
@@ -1250,7 +1250,7 @@ Class scrbook Warning: Usage of \IfUsePrefixLine outside section command
 (scrbook)              \@secondoftwo before using it on input line 443.
 
 (./chapter_learning_rules_for_perceptron_network.tex
-<img/PerceptronNetwork.png, id=281, 569.4876pt x 304.4976pt>
+<img/PerceptronNetwork.png, id=312, 569.4876pt x 304.4976pt>
 File: img/PerceptronNetwork.png Graphic file (type png)
 <use img/PerceptronNetwork.png>
 Package pdftex.def Info: img/PerceptronNetwork.png  used on input line 16.
@@ -1268,7 +1268,7 @@ e 32.
 
 
 ]
-<img/decision_boundary_for_perceptron.png, id=288, 279.444pt x 206.2104pt>
+<img/decision_boundary_for_perceptron.png, id=318, 279.444pt x 206.2104pt>
 File: img/decision_boundary_for_perceptron.png Graphic file (type png)
 <use img/decision_boundary_for_perceptron.png>
 Package pdftex.def Info: img/decision_boundary_for_perceptron.png  used on inpu
@@ -1288,10 +1288,16 @@ Class scrbook Warning: Usage of \IfUsePrefixLine outside section command
 (scrbook)              setting \IfUsePrefixLine to either \@firstoftwo or
 (scrbook)              \@secondoftwo before using it on input line 446.
 
-[21
+(./objfunc.tex [21
 
 
-] [22
+]
+<img/gradient.png, id=355, 545.03625pt x 277.035pt>
+File: img/gradient.png Graphic file (type png)
+<use img/gradient.png>
+Package pdftex.def Info: img/gradient.png  used on input line 49.
+(pdftex.def)             Requested size: 354.26936pt x 180.0706pt.
+ [22 <./img/gradient.png (PNG copy)>]) [23] [24
 
 
 ]
@@ -1307,21 +1313,10 @@ Class scrbook Warning: Usage of \IfUsePrefixLine outside section command
 (scrbook)              setting \IfUsePrefixLine to either \@firstoftwo or
 (scrbook)              \@secondoftwo before using it on input line 449.
 
-(./GenerativeChapter.tex [23]
-<img/boltzmanMachine.png, id=334, 497.2176pt x 393.1488pt>
-File: img/boltzmanMachine.png Graphic file (type png)
-<use img/boltzmanMachine.png>
-Package pdftex.def Info: img/boltzmanMachine.png  used on input line 39.
-(pdftex.def)             Requested size: 323.1876pt x 255.54369pt.
- [24 <./img/boltzmanMachine.png (PNG copy)>]
-<img/RestrictedBoltzmanMachine.png, id=341, 463.4916pt x 254.3904pt>
-File: img/RestrictedBoltzmanMachine.png Graphic file (type png)
-<use img/RestrictedBoltzmanMachine.png>
-Package pdftex.def Info: img/RestrictedBoltzmanMachine.png  used on input line 
-76.
-(pdftex.def)             Requested size: 301.26596pt x 165.35179pt.
+[25] [26
 
-[25 <./img/RestrictedBoltzmanMachine.png (PNG copy)>]) [26]
+
+]
 chapter 7.
 
 Class scrbook Warning: Usage of \IfUsePrefixLine outside section command
@@ -1332,12 +1327,23 @@ Class scrbook Warning: Usage of \IfUsePrefixLine outside section command
 (scrbook)              executed.
 (scrbook)              You may change this and avoid the warning by LOCALLY
 (scrbook)              setting \IfUsePrefixLine to either \@firstoftwo or
-(scrbook)              \@secondoftwo before using it on input line 452.
+(scrbook)              \@secondoftwo before using it on input line 453.
 
-[27
+(./GenerativeChapter.tex [27]
+<img/boltzmanMachine.png, id=388, 497.2176pt x 393.1488pt>
+File: img/boltzmanMachine.png Graphic file (type png)
+<use img/boltzmanMachine.png>
+Package pdftex.def Info: img/boltzmanMachine.png  used on input line 39.
+(pdftex.def)             Requested size: 323.1876pt x 255.54369pt.
+ [28 <./img/boltzmanMachine.png (PNG copy)>]
+<img/RestrictedBoltzmanMachine.png, id=395, 463.4916pt x 254.3904pt>
+File: img/RestrictedBoltzmanMachine.png Graphic file (type png)
+<use img/RestrictedBoltzmanMachine.png>
+Package pdftex.def Info: img/RestrictedBoltzmanMachine.png  used on input line 
+76.
+(pdftex.def)             Requested size: 301.26596pt x 165.35179pt.
 
-
-] [28]
+[29 <./img/RestrictedBoltzmanMachine.png (PNG copy)>]) [30]
 chapter 8.
 
 Class scrbook Warning: Usage of \IfUsePrefixLine outside section command
@@ -1348,7 +1354,23 @@ Class scrbook Warning: Usage of \IfUsePrefixLine outside section command
 (scrbook)              executed.
 (scrbook)              You may change this and avoid the warning by LOCALLY
 (scrbook)              setting \IfUsePrefixLine to either \@firstoftwo or
-(scrbook)              \@secondoftwo before using it on input line 478.
+(scrbook)              \@secondoftwo before using it on input line 456.
+
+(./nsi.tex [31
+
+
+]) [32]
+chapter 9.
+
+Class scrbook Warning: Usage of \IfUsePrefixLine outside section command
+(scrbook)              style makes no sense, because the behaviour not only
+(scrbook)              depends on class options but also on the run-time
+(scrbook)              section command style.
+(scrbook)              Neither the then-code nor the else-code will be
+(scrbook)              executed.
+(scrbook)              You may change this and avoid the warning by LOCALLY
+(scrbook)              setting \IfUsePrefixLine to either \@firstoftwo or
+(scrbook)              \@secondoftwo before using it on input line 460.
 
 (./ReinforcementLearning.tex
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
@@ -1360,53 +1382,60 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<img/reinforcementlearning01.png, id=365, 643.6547pt x 442.65375pt>
+<img/reinforcementlearning01.png, id=419, 643.6547pt x 442.65375pt>
 File: img/reinforcementlearning01.png Graphic file (type png)
 <use img/reinforcementlearning01.png>
 Package pdftex.def Info: img/reinforcementlearning01.png  used on input line 31
 .
 (pdftex.def)             Requested size: 418.37059pt x 287.72151pt.
 
-[29
+[33
 
 
 ]
-<img/rl-maze.png, id=371, 838.63312pt x 443.40656pt>
+<img/rl-maze.png, id=426, 838.63312pt x 443.40656pt>
 File: img/rl-maze.png Graphic file (type png)
 <use img/rl-maze.png>
 Package pdftex.def Info: img/rl-maze.png  used on input line 50.
 (pdftex.def)             Requested size: 293.52599pt x 155.19461pt.
- [30 <./img/reinforcementlearning01.png (PNG copy)>] [31 <./img/rl-maze.png (PN
+ [34 <./img/reinforcementlearning01.png (PNG copy)>] [35 <./img/rl-maze.png (PN
 G copy)>]
-<img/rl-maze-be.png, id=382, 709.90219pt x 443.40656pt>
+<img/rl-maze-be.png, id=437, 709.90219pt x 443.40656pt>
 File: img/rl-maze-be.png Graphic file (type png)
 <use img/rl-maze-be.png>
 Package pdftex.def Info: img/rl-maze-be.png  used on input line 90.
 (pdftex.def)             Requested size: 248.46948pt x 155.19461pt.
- [32 <./img/rl-maze-be.png (PNG copy)>]
-<img/rl-maze-stoch.png, id=388, 709.90219pt x 443.40656pt>
+ [36 <./img/rl-maze-be.png (PNG copy)>]
+<img/rl-maze-stoch.png, id=442, 709.90219pt x 443.40656pt>
 File: img/rl-maze-stoch.png Graphic file (type png)
 <use img/rl-maze-stoch.png>
 Package pdftex.def Info: img/rl-maze-stoch.png  used on input line 121.
 (pdftex.def)             Requested size: 248.46948pt x 155.19461pt.
-<img/rl-maze-plan.png, id=391, 712.16063pt x 426.84468pt>
+<img/rl-maze-plan.png, id=445, 712.16063pt x 426.84468pt>
 File: img/rl-maze-plan.png Graphic file (type png)
 <use img/rl-maze-plan.png>
 Package pdftex.def Info: img/rl-maze-plan.png  used on input line 130.
 (pdftex.def)             Requested size: 249.25995pt x 149.39787pt.
-<img/rl-maze-LP.png, id=393, 820.56563pt x 437.38406pt>
+<img/rl-maze-LP.png, id=447, 820.56563pt x 437.38406pt>
 File: img/rl-maze-LP.png Graphic file (type png)
 <use img/rl-maze-LP.png>
 Package pdftex.def Info: img/rl-maze-LP.png  used on input line 141.
 (pdftex.def)             Requested size: 287.20227pt x 153.0867pt.
- [33 <./img/rl-maze-stoch.png (PNG copy)>] [34 <./img/RL-maze-plan.png (PNG cop
-y)> <./img/RL-maze-LP.png (PNG copy)>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 482.
- [35]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 482.
- (./MyDeepNeuralNetworkNotes.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 482.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 482.
+ [37 <./img/rl-maze-stoch.png (PNG copy)>] [38 <./img/RL-maze-plan.png (PNG cop
+y)> <./img/RL-maze-LP.png (PNG copy)>] [39]
+<img/rl-deepql1.png, id=467, 880.03781pt x 403.5075pt>
+File: img/rl-deepql1.png Graphic file (type png)
+<use img/rl-deepql1.png>
+Package pdftex.def Info: img/rl-deepql1.png  used on input line 193.
+(pdftex.def)             Requested size: 396.01335pt x 181.57669pt.
+ [40 <./img/rl-deepql1.png (PNG copy)>] [41])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 464.
+ [42]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 464.
+
+(./MyDeepNeuralNetworkNotes.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 464.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 464.
 Package rerunfilecheck Info: File `MyDeepNeuralNetworkNotes.out' has not change
 d.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -1416,36 +1445,37 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 28127 strings out of 492167
- 490864 string characters out of 6131558
+ 28224 strings out of 492167
+ 492028 string characters out of 6131558
  738067 words of memory out of 5000000
- 31839 multiletter control sequences out of 15000+600000
- 560068 words of font info for 150 fonts, out of 8000000 for 9000
+ 31870 multiletter control sequences out of 15000+600000
+ 560597 words of font info for 159 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,12n,86p,10083b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-mi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/t
-exmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts
-/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/c
-m-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm172
-8.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf-dist/f
-onts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf-dist/fonts/type1/publ
-ic/cm-super/sfsx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfs
-x2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr
-/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on MyDeepNeuralNetworkNotes.pdf (39 pages, 1459328 bytes).
+s/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
+usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
+></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/te
+xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/
+fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
+rm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></us
+r/share/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf-d
+ist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf-dist/fonts/type1
+/public/cm-super/sfsx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-supe
+r/sfsx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb>
+</usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/tex
+mf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on MyDeepNeuralNetworkNotes.pdf (46 pages, 1762386 bytes).
 PDF statistics:
- 684 PDF objects out of 1000 (max. 8388607)
- 602 compressed objects within 7 object streams
- 171 named destinations out of 1000 (max. 500000)
- 26093 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 815 PDF objects out of 1000 (max. 8388607)
+ 722 compressed objects within 8 object streams
+ 211 named destinations out of 1000 (max. 500000)
+ 26207 words of extra memory for PDF output out of 29859 (max. 10000000)
 
